@@ -1,0 +1,183 @@
+.face-lockup
+  max-width: 780px
+  +display(flex)
+  margin: 0 auto
+  +align-items(center)
+  +justify-content(space-between)
+
+  .face-img
+    //border-radius: 50%
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    //background-image: url(../img/#{$avatar-path})
+    background-image: url(../img/logo2.svg)
+    +size(190px)
+    +order(3)
+
+  [class^="icon-"]
+    +size(100px)
+    background: $bgcolor
+    border-radius: 50%
+
+    path
+      fill: $accent
+
+    &.icon-pencil
+      +order(1)
+    &.icon-mouse
+      +order(2)
+    &.icon-browser
+      +order(4)
+    &.icon-video
+      +order(5)
+
+@media screen and (max-width: 650px)
+  .face-lockup
+    display: block
+    text-align: center
+
+    div
+      display: inline-block
+
+    .face-img
+      display: block
+      background:
+        position: center center
+        repeat: no-repeat
+      margin: 0 auto 30px
+
+    [class^="icon-"]
+      margin: 10px 9%
+
+
+
+
+.blurb
+
+  max-width: 620px
+  padding: 0 20px
+  margin: 50px auto 60px
+  font-size: 24px
+  text-align: center
+  font-weight: 300
+  position: relative
+
+
+hr
+  width: 75%
+  margin: auto
+  padding-bottom: 50px
+
+
+.items
+
+  text-align: center
+  position: relative
+  margin-top: 30px
+
+
+
+
+
+
+  .item-skill
+
+    display: inline-block
+    min-width: 350px
+
+
+    .item-image1
+      +size(150px)
+      position: relative
+      display: flex
+      justify-content: center
+      flex-direction: column
+      margin: auto
+      padding-bottom: 40px
+      background:
+        image: url(/assets/img/html.svg)
+        repeat: no-repeat
+
+    .item-image2
+      +size(150px)
+      position: relative
+      display: flex
+      justify-content: center
+      flex-direction: column
+      margin: auto
+      padding-bottom: 40px
+      background:
+        image: url(../img/css.svg)
+        repeat: no-repeat
+
+    .item-image3
+      +size(150px)
+      position: relative
+      display: flex
+      justify-content: center
+      flex-direction: column
+      margin: auto
+      padding-bottom: 40px
+      background:
+        image: url(../img/javascript.svg)
+        repeat: no-repeat
+
+    .text
+      margin: auto
+      max-width: 300px
+
+
+
+
+
+
+
+.skill-lockup
+  max-width: 540px
+  margin: 100px auto
+  color: #999
+
+  +clearfix
+
+
+  .skill-unit
+    width: 270px
+    float: left
+
+  .skill-icons
+    font-size: 0
+    margin: 3px 0 30px
+
+    span
+      display: inline-block
+      +size(14px)
+      background-color: $accent
+      margin-right: 8px
+      border-radius: 50%
+
+      &:after
+        content: ''
+        display: block
+        +size(10px)
+        background: #fff
+        border-radius: 50%
+        margin: 2px
+
+    @for $i from 1 through 10
+      &.skill-#{$i} span:nth-child(n+#{$i+1})
+        @extend %skill-color
+
+
+%skill-color
+  background: $bgcolor
+
+
+
+
+@media screen and (max-width: 541px)
+  .skill-lockup
+    width: 220px
+
+    .skill-unit
+      width: 220px

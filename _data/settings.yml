@@ -1,0 +1,105 @@
+#-------------------------------
+# General Site Settings
+
+title: Front-End Developer
+description: HTML5 // CSS3 // Javascript // SEO
+email: kabirmaan11@gmail.com
+
+# NOTE: The Logo and Background image are defined in the all.sass document.
+
+menu:
+- {name: About Me, url: '#about-me'}
+- {name: Work, url: '#work'}
+#- {name: Clients, url: '#clients'}
+- {name: Contact, url: '#contact'}
+
+#-------------------------------
+# SEO Section
+
+# NOTE: Providing SEO information will make this website more searchable on the internet.
+
+seo:
+  description: 'Provide a description for your website to make it visible to search engines.'
+  rel-author:
+  rel-publisher:
+
+#-------------------------------
+# Google Analytics Section
+
+# Analytics helps you understand who visits your website.
+# Learn more at: http://support.google.com/analytics/answer/1008065
+
+# NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
+
+#google-analytics-ua: UA-XXXXXX-X
+
+#-------------------------------
+# About Section
+
+# NOTE: The avatar is defined in the all.sass document.
+
+blurb: >
+  Hello! My name is Kabir Maan and I am a Front-End developer based in London. I enjoy building everything from small business sites to rich interactive web apps. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here. Whether you need a new website, updates to an existing application or a bespoke email marketing shot; if it involves the web, I can certainly help.
+
+
+skills:
+- {name: Communication, value: '8'}
+- {name: Organization, value: '9'}
+- {name: Learning, value: '9'}
+- {name: Teaching, value: '9'}
+- {name: Planning, value: '8'}
+- {name: Visual Design, value: '7'}
+- {name: UX Design, value: '7'}
+- {name: Programming, value: '8'}
+
+#-------------------------------
+# Work Section
+
+projects:
+- {name: Black Bird Clothing concept, folder: 'proj-1', file: 'work/proj-1.html'}
+- {name: CSS Animations, folder: 'proj-2', file: 'work/proj-2.html'}
+- {name: Wireframing, folder: 'proj-3', file: 'work/proj-3.html'}
+- {name: JavaScript Projects, folder: 'proj-4', file: 'work/proj-4.html'}
+
+
+
+
+
+#-------------------------------
+# Clients Section
+
+clients:
+- {avatar: 'face-aaroni.jpg',
+  name: 'Scott Summers',
+  title: 'Director of Design, OnToText Ind.',
+  quote: '<p><strong>While we all felt that Kabir was a great</strong> asset to our team — and really worked hard to understand our products from the point of view of the customer — we also all agree he should shower more often.</p>',
+  logo: 'logo1.png'}
+- {avatar: 'face-atariboy.jpg',
+  name: 'Hank McCoy',
+  title: 'Eater of Salad, Antartica Int.',
+  quote: '<p><strong>Working with Kabir was the highlight of my career.</strong> Other moments of note were collecting the largest number of paperclips in the office, and winning a trophy for saying "uh huh, and then what?" 30 times in a row to my girlfriend without her noticing.</p>',
+  logo: 'logo2.png'}
+- {avatar: 'face-jackiesaik.jpg',
+  name: 'Stacy Lang',
+  title: 'Social Media Girl, Quebec Int.',
+  quote: '<p><strong>Yea, I guess hes good at computers or something,</strong> but let me ask you this: If a cat always lands on its feet, and buttered bread always lands butter side down, what would happen if you tied buttered bread on top of a cat?</p>',
+  logo: 'logo3.png'}
+- {avatar: 'face-teleject.jpg',
+  name: 'Cleatus Cassidy',
+  title: 'VP of Helmut, Lorem Sorem LLC.',
+  quote: '<p><strong>Back in old country</strong> only nerds who is playing on computers. Now all bros is wanting to make codes and junk. I lost foot in war. You dont see girls asking me about homework.</p>',
+  logo: 'logo4.png'}
+
+
+#-------------------------------
+# Contact Section
+
+social:
+- {icon: 'twitter', link: ''}
+- {icon: 'dribbble', link: ''}
+- {icon: 'behance', link: ''}
+- {icon: 'youtube', link: ''}
+- {icon: 'linkedin', link: ''}
+
+
+# social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'

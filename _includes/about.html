@@ -1,0 +1,75 @@
+<section>
+
+  <h3 id="about-me">About Me</h3>
+
+  <div class="face-lockup">
+
+    <div class="face-img"></div>
+
+    <div class="icon-pencil">{% include icons/icon-pencil.html %}</div>
+    <div class="icon-mouse">{% include icons/icon-mouse.html %}</div>
+    <div class="icon-browser">{% include icons/icon-browser.html %}</div>
+    <div class="icon-video">{% include icons/icon-video.html %}</div>
+
+  </div>
+
+
+  <div class="blurb">
+    {{ site.data.settings.blurb | markdownify }}
+  </div>
+
+  <hr>
+
+  <div class="items">
+
+    <div class="item-skill">
+      <div class="item-image">
+        <div class="item-image1"></div>
+      </div>
+      <div class="text">
+        <p>I write clean code that conforms to the <abbr title="World Wide Web Consortium">W3C</abbr>'s web standards and semantic best practices. I use technologies like <abbr title="Hyper Text Markup Language 5">HTML5</abbr> & Jade to create structured content to deliver your message to potential and existing clients visitng your website.
+      </div>
+    </div>
+    <div class="item-skill">
+      <div class="item-image">
+        <div class="item-image2"></div>
+      </div>
+      <div class="text">
+        <p>Using style sheet languages like <abbr title="Cascading Style Sheets">CSS3</abbr> (<abbr title="Sassy CSS">SCSS</abbr>/<abbr title="Syntactically Awesome Stylesheets Sass">SASS</abbr>), I transform static artwork into responsive, pixel perfect websites. Check out the CSS Animations section in my portfolio below to see how I've used animations to improve the aesthetics of a website. </p>
+      </div>
+
+    </div>
+    <div class="item-skill">
+      <div class="item-image">
+        <div class="item-image3"></div>
+      </div>
+      <div class="text">
+        <p>I utilise Javascript and jQuery to create interactive and fully functional interfaces. Check out Black Bird Clothing Concept in my portfolio below to see how JavaScript is used to create an engaging parallax effect within the website.  </p>
+      </div>
+    </div>
+
+
+  </div>
+
+  {% if site.data.settings.skills %}
+
+  <div class="skill-lockup">
+
+    {% for skill in site.data.settings.skills %}
+
+      <div class="skill-unit">
+        <div class="skill-label">{{ skill.name }}</div>
+        <div class="skill-icons skill-{{ skill.value }}">
+          {% for i in (1..10) %}
+            <span></span>
+          {% endfor %}
+        </div>
+      </div>
+
+    {% endfor %}
+
+  </div>
+
+  {% endif %}
+
+</section>
